@@ -57,6 +57,7 @@ class GurbaniTransciber():
             print(f"language Code {result.language_code}")
             print(u"Transcript: {}".format(result.alternatives[0].transcript))
             print("Confidence: {}".format(result.alternatives[0].confidence))
+            print("---------------------------------------------------")
 
     def stream_audio(self, chunked_audio_data):
-        return
+        raise NotImplementedError
